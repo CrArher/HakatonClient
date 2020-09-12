@@ -1,6 +1,6 @@
 ﻿using ScreenObserver;
 
-namespace DefaultNamespace.Screens.Profile.Categories.Activity
+namespace Screens.Profile.Categories.Activity
 {
     public class ActivityGenerator : IScreenGenerator<ProfileContext,ProfileContainer>
     {

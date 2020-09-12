@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace.Screens.Profile.Categories.Header
+﻿namespace Screens.Profile.Categories.Header
 {
     public class HeaderController : IController
     {

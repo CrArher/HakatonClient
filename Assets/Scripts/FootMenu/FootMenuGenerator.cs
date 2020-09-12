@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace.FootMenu
+﻿namespace FootMenu
 {
     public class FootMenuGenerator : IGenerator
     {

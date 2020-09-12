@@ -1,6 +1,6 @@
 ﻿using ScreenManager;
 
-namespace DefaultNamespace.FootMenu
+namespace FootMenu
 {
     public class FootMenuController : IController
     {

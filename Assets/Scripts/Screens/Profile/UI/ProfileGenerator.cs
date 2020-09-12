@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace.Screens.Profile
+﻿namespace Screens.Profile.UI
 {
     public class ProfileGenerator
     {

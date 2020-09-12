@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace.Screens.Profile.Categories.Info
+﻿namespace Screens.Profile.Categories.Info
 {
     public class InfoController : IController
     {

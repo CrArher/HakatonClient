@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace DefaultNamespace.Screens.Profile.Categories.Info
+namespace Screens.Profile.Categories.Info
 {
     public class InfoComponent : MonoBehaviour
     {

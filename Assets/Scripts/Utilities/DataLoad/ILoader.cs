@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GameLoad.DataLoad
+namespace Utilities.DataLoad
 {
     public interface ILoader
     {

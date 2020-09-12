@@ -7,6 +7,7 @@
         Directions,
         Profile,
         BattlePass,
-        Shop
+        Shop,
+        Achievements
     }
 }

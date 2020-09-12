@@ -6,6 +6,58 @@
       "name_course" : "global",
       "description" : "global",
       "icon" : "global"
+    },
+    "test1": {
+      "type" : "global",
+      "name" : "global1",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    },
+    "test2": {
+      "type" : "global",
+      "name" : "global2",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    },
+    "test3": {
+      "type" : "global",
+      "name" : "global3",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    },
+    "test4": {
+      "type" : "global",
+      "name" : "global4",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    },"test5": {
+      "type" : "global",
+      "name" : "global6",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    },"test7": {
+      "type" : "global",
+      "name" : "global7",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    },"test8": {
+      "type" : "global",
+      "name" : "global8",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    },"test9": {
+      "type" : "global",
+      "name" : "global9",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
     }
   }
 }

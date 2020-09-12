@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace DefaultNamespace.Screens.Profile
+namespace Screens.Profile.UI
 {
     public class ProfileComponent : MonoBehaviour
     {

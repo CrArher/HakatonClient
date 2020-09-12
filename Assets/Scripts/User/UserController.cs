@@ -1,6 +1,4 @@
-﻿using DefaultNamespace;
-
-namespace User
+﻿namespace User
 {
     public class UserController : IController
     {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using ScreenObserver;
 using Screens.AchievementScreen.AchievementDetailsDialog;
+using Screens.AchievementScreen.Base;
 
 namespace Screens.AchievementScreen
 {
@@ -11,6 +12,7 @@ namespace Screens.AchievementScreen
         public AchievementScreenGenerator()
         {
             _generators.Add(new AchievementDetailsDialogGenerator());
+            _generators.Add(new AchievementsScreenGenerator());
         }
         
         public void Generate(AchievementScreenContext context, AchievementScreenContainer container, ControllerCollection collection)

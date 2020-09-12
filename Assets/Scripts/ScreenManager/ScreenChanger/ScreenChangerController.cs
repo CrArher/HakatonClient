@@ -1,6 +1,4 @@
-﻿using DefaultNamespace;
-
-namespace ScreenManager.ScreenChanger
+﻿namespace ScreenManager.ScreenChanger
 {
     public class ScreenChangerController : IController
     {
@@ -36,6 +34,7 @@ namespace ScreenManager.ScreenChanger
 
         private void OnChangedScreen()
         {
+            
         }
     }
 }

@@ -1,7 +1,7 @@
-﻿using DefaultNamespace.Screens.Profile.Categories.Activity.Graph;
+﻿using Screens.Profile.Categories.Activity.Graph;
 using TMPro;
 
-namespace DefaultNamespace.Screens.Profile.Categories.Activity
+namespace Screens.Profile.Categories.Activity
 {
     public class ActivityComponent
     {

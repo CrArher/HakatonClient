@@ -8,3 +8,13 @@ Temp/
 Packages/
 
 .idea/
+
+Assembly-CSharp.csproj
+
+*.sln
+
+UserSettings/
+
+obj/
+
+Logs/

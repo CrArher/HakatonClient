@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using Utilities;
 
-namespace Models.BaseModel
+namespace Utilities
 {
     public class DescriptionCollection<T> where T : IDescription
     {

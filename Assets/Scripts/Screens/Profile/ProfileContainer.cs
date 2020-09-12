@@ -1,14 +1,15 @@
-﻿using DefaultNamespace.Screens.Profile.Categories.Achievements;
-using DefaultNamespace.Screens.Profile.Categories.Activity;
-using DefaultNamespace.Screens.Profile.Categories.Header;
-using DefaultNamespace.Screens.Profile.Categories.Info;
-using ScreenObserver;
+﻿using ScreenObserver;
+using Screens.Profile.Categories.Achievements;
+using Screens.Profile.Categories.Activity;
+using Screens.Profile.Categories.Header;
+using Screens.Profile.Categories.Info;
+using UnityEngine;
 
-namespace DefaultNamespace.Screens.Profile
+namespace Screens.Profile
 {
-    public class ProfileContainer : ISceneContainer
+    public class ProfileContainer : MonoBehaviour,ISceneContainer
     {
-        public AchievementsComponent AchievementsComponent;
+        public AchievementsCategoryComponent achievementsCategoryComponent;
         public ActivityComponent ActivityComponent;
         public HeaderComponent HeaderComponent;
         public InfoComponent InfoComponent;

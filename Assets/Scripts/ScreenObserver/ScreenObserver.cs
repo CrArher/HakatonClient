@@ -1,7 +1,7 @@
-using DefaultNamespace;
-using DefaultNamespace.Screens.Profile;
 using ScreenManager;
 using ScreenManager.ScreenChanger;
+using Screens.AchievementScreen;
+using Screens.Profile;
 
 namespace ScreenObserver
 {
@@ -37,8 +37,10 @@ namespace ScreenObserver
             switch (_model.CurrentScreen)
             {
                 case ScreenType.Profile:
-                    var generator = new ProfileScreenGenerator();
-                    generator.Generate(new ProfileContext(), _container.ProfileContainer,_controllerCollection);
+                    new ProfileScreenGenerator().Generate(new ProfileContext(_context), _container.ProfileContainer, _controllerCollection);
+                    break;
+                case ScreenType.Achievements:
+                    new AchievementScreenGenerator().Generate(new AchievementScreenContext(_context), _container.AchievementScreenContainer, _controllerCollection);
                     break;
             }
 

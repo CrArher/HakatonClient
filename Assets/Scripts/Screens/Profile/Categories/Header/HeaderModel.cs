@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DefaultNamespace.Screens.Profile.Categories.Header
+namespace Screens.Profile.Categories.Header
 {
     public class HeaderModel
     {

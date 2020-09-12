@@ -1,6 +1,6 @@
 ﻿using ScreenObserver;
 
-namespace DefaultNamespace.Screens.Profile.Categories.Info
+namespace Screens.Profile.Categories.Info
 {
     public class InfoGenerator : IScreenGenerator<ProfileContext,ProfileContainer>
     {

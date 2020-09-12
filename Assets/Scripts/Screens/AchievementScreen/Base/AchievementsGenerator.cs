@@ -1,6 +1,4 @@
-﻿using DefaultNamespace;
-
-namespace Screens.AchievementScreen.Base
+﻿namespace Screens.AchievementScreen.Base
 {
     public class AchievementsGenerator : IGenerator
     {

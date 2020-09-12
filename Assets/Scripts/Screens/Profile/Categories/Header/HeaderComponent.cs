@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DefaultNamespace.Screens.Profile.Categories.Header
+namespace Screens.Profile.Categories.Header
 {
     public class HeaderComponent : MonoBehaviour
     {

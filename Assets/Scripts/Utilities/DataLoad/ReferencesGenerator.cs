@@ -1,9 +1,6 @@
-﻿using DefaultNamespace;
-using GameLoad.DataLoad;
-using UnityEngine;
-using Utilities;
+﻿using UnityEngine;
 
-namespace Screens.AchievementScreen.Base
+namespace Utilities.DataLoad
 {
     public class ReferencesGenerator : IGenerator
     {

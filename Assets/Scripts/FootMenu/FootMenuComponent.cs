@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace DefaultNamespace.FootMenu
+namespace FootMenu
 {
     public class FootMenuComponent : MonoBehaviour
     {

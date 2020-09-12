@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using GameLoad.DataLoad;
 using Lib.fastJSON;
 
 namespace Utilities.DataLoad

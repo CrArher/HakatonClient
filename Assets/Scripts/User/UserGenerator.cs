@@ -1,5 +1,3 @@
-using DefaultNamespace;
-
 namespace User
 {
     public class UserGenerator : IGenerator

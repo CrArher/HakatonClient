@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace.Screens.Profile.Categories.Activity
+﻿namespace Screens.Profile.Categories.Activity
 {
     public class ActivityController : IController
     {

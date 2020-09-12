@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using Utilities.DataLoad;
 
-namespace GameLoad.DataLoad
+namespace Utilities.DataLoad
 {
     public class MainConfigLoader : ILoader
     {

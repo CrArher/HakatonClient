@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Models.BaseModel;
+using Utilities;
 
 namespace Screens.AchievementScreen.Base
 {

@@ -1,6 +1,6 @@
 ﻿using ScreenObserver;
 
-namespace DefaultNamespace.Screens.Profile.Categories.Header
+namespace Screens.Profile.Categories.Header
 {
     public class HeaderGenerator : IScreenGenerator<ProfileContext,ProfileContainer>
     {

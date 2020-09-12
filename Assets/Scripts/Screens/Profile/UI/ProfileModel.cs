@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace DefaultNamespace.Screens.Profile
+﻿namespace Screens.Profile.UI
 {
     public class ProfileModel
     {
