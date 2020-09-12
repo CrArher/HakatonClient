@@ -1,0 +1,11 @@
+﻿{
+  "achievements": {
+    "test": {
+      "type" : "global",
+      "name" : "global",
+      "name_course" : "global",
+      "description" : "global",
+      "icon" : "global"
+    }
+  }
+}

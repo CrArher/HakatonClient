@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Screens.AchievementScreen;
 
 namespace Utilities
 {
@@ -9,10 +10,12 @@ namespace Utilities
 
         public Factory()
         {
-            DescriptionFactory = new Dictionary<string, Func<Dictionary<string, object>, IDescription>>()
+            DescriptionFactory = new Dictionary<string, Func<Dictionary<string, object>, IDescription>>
             {
-                // {"items", (node) => new ResourceDescription(node)},
+                {"achievements", (node) => new AchievementDescription(node)},
             };
         }
+        
+        
     }
 }

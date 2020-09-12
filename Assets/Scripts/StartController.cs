@@ -1,6 +1,7 @@
 ﻿using System;
 using DefaultNamespace.FootMenu;
 using PreviewSlider;
+using Screens.AchievementScreen.Base;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -15,7 +16,9 @@ namespace DefaultNamespace
         {
             var controller = new PreviewSliderController(globalContainer.PreviewSliderContainer);
             controller.Activate();
+            _generator.Add(new ReferencesGenerator());
             _generator.Add(new FootMenuGenerator());
+            _generator.Add(new AchievementsGenerator());
             _generator.Generate(_globalContext,_controllerCollection,globalContainer);
         }
     }
