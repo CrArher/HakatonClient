@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using Lib.fastJSON;
+using UnityEngine;
 
 namespace Utilities.DataLoad
 {
@@ -15,7 +16,7 @@ namespace Utilities.DataLoad
         
         public Dictionary<string, object> LoadData()
         {
-            string sourceString = File.ReadAllText(_path);
+            string sourceString = Resources.Load<TextAsset>(_path).text;
             
             return (Dictionary<string, object>) JSON.Parse(sourceString);
         }
