@@ -21,6 +21,7 @@
         public void Activate()
         {
             _component.Click += OnClick;
+            _component.SetIcon(_context.ImageLoaderComponent.Get(_model.Description.Icon), _model.Description.Enabled);
         }
 
         private void OnClick()

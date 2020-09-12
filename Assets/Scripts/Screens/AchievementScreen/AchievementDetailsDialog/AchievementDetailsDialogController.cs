@@ -27,7 +27,12 @@
 
         private void OnShow()
         {
-            _component.Show();
+            var description = _model.Achievement.Description;
+            
+            _component.Name.text = description.Name;
+            _component.Desciption.text = description.Description;
+            _component.State.text = description.Enabled ? "Получено" : "Еще не получено";
+            _component.Show(_context.ImageLoaderComponent.Get(description.Icon));
         }
 
         private void ClickClose()

@@ -15,6 +15,7 @@ public interface IGlobalContext
     Engine Engine { get; set; }
     AchievementsModel AchievementsModel { get; set; }
     References References { get; set; }
+    ImageLoaderComponent ImageLoaderComponent { get; set; }
 
     NotificationModel NotificationModel { get; set; }
 }

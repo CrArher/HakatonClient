@@ -11,7 +11,7 @@ namespace Screens.AchievementScreen.Base
         {
             foreach (var description in descriptions)
             {
-                _achievements.Add(description.Value.Name, new AchievementUnitModel(description.Value));
+                _achievements.Add(description.Key, new AchievementUnitModel(description.Value));
             }
         }
 

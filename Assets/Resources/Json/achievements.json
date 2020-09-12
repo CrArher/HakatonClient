@@ -1,63 +1,76 @@
 ﻿{
   "achievements": {
     "test": {
-      "type" : "global",
-      "name" : "global",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
+      "type": "global",
+      "name": "Первые шаги!",
+      "name_course": "global",
+      "description": "Посети 3 занятия подряд",
+      "icon": "1",
+      "enabled": true
     },
     "test1": {
-      "type" : "global",
-      "name" : "global1",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
+      "type": "global",
+      "name": "Хорошее начало!",
+      "name_course": "global",
+      "description": "Посети 10 занятий подряд",
+      "icon": "2",
+      "enabled": false
     },
     "test2": {
-      "type" : "global",
-      "name" : "global2",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
+      "type": "global",
+      "name": "Легче легкого!",
+      "name_course": "global",
+      "description": "Сдай 3 задания на максимальный балл",
+      "icon": "3",
+      "enabled": false
     },
     "test3": {
-      "type" : "global",
-      "name" : "global3",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
+      "type": "global",
+      "name": "Достойно похвалы!",
+      "name_course": "global",
+      "description": "Сдай 9 заданий на максимальный балл",
+      "icon": "4",
+      "enabled": false
     },
     "test4": {
-      "type" : "global",
-      "name" : "global4",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
-    },"test5": {
-      "type" : "global",
-      "name" : "global6",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
-    },"test7": {
-      "type" : "global",
-      "name" : "global7",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
-    },"test8": {
-      "type" : "global",
-      "name" : "global8",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
-    },"test9": {
-      "type" : "global",
-      "name" : "global9",
-      "name_course" : "global",
-      "description" : "global",
-      "icon" : "global"
+      "type": "global",
+      "name": "Хороший выбор!",
+      "name_course": "global",
+      "description": "Присоединись к своему первому курсу",
+      "icon": "5",
+      "enabled": false
+    },
+    "test5": {
+      "type": "global",
+      "name": "Хороший выбор!",
+      "name_course": "global",
+      "description": "Присоединись к своему первому курсу",
+      "icon": "6",
+      "enabled": false
+    },
+    "test6": {
+      "type": "global",
+      "name": "Хороший выбор!",
+      "name_course": "global",
+      "description": "Присоединись к своему первому курсу",
+      "icon": "7",
+      "enabled": false
+    },
+    "test7": {
+      "type": "global",
+      "name": "Хороший выбор!",
+      "name_course": "global",
+      "description": "Присоединись к своему первому курсу",
+      "icon": "8",
+      "enabled": false
+    },
+    "test8": {
+      "type": "global",
+      "name": "Хороший выбор!",
+      "name_course": "global",
+      "description": "Присоединись к своему первому курсу",
+      "icon": "9",
+      "enabled": false
     }
   }
 }

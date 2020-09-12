@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Screens.AchievementScreen.AchievementDetailsDialog
@@ -7,9 +8,14 @@ namespace Screens.AchievementScreen.AchievementDetailsDialog
     {
         [SerializeField] private GameObject root;
         public Button CloseButton;
+        [SerializeField] private Image _icon;
+        public TextMeshProUGUI Name;
+        public TextMeshProUGUI Desciption;
+        public TextMeshProUGUI State;
         
-        public void Show()
+        public void Show(Sprite icon)
         {
+            _icon.sprite = icon;
             root.SetActive(true);
         }
 

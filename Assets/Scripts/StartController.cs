@@ -16,6 +16,8 @@ public class StartController : MonoBehaviour
     private Generator _generator = new Generator();
     public void Start()
     {
+        _globalContext.ImageLoaderComponent = globalContainer.ImageLoaderComponent;
+        _globalContext.ImageLoaderComponent.Init();
         var controller = new PreviewSliderController(globalContainer.PreviewSliderContainer);
         controller.Activate();
         _generator.Add(new ReferencesGenerator());

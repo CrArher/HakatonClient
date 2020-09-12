@@ -11,6 +11,7 @@ namespace Screens.AchievementScreen
         public string Name;
         public string NameCourse;
         public string Description;
+        public bool Enabled;
         
         public AchievementDescription(IDictionary<string, object> node)
         {
@@ -19,6 +20,7 @@ namespace Screens.AchievementScreen
             NameCourse = node.GetString("name_course");
             Description = node.GetString("description");
             Icon = node.GetString("icon");
+            Enabled = node.GetBool("enabled");
         }
     }
 }

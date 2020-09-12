@@ -16,6 +16,7 @@ public class GlobalContext : IGlobalContext
     public AchievementsModel AchievementsModel { get; set; }
     public References References { get; set; }
     public NotificationModel NotificationModel { get; set; }
+    public ImageLoaderComponent ImageLoaderComponent { get; set; }
 
     public GlobalContext()
     {
@@ -32,5 +33,6 @@ public class GlobalContext : IGlobalContext
         CommandModel = context.CommandModel;
         ScreenChangerModel = context.ScreenChangerModel;
         NotificationModel = context.NotificationModel;
+        ImageLoaderComponent = context.ImageLoaderComponent;
     }
 }

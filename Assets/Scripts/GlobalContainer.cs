@@ -5,6 +5,7 @@ using ScreenManager;
 using ScreenObserver;
 using Screens.AchievementScreen;
 using UnityEngine;
+using Utilities;
 
 public class GlobalContainer : MonoBehaviour
 {
@@ -14,4 +15,5 @@ public class GlobalContainer : MonoBehaviour
     public ScreensContainer ScreensContainer;
     public AchievementScreenContainer AchievementScreenContainer;
     public NotificationComponent NotificationComponent;
+    public ImageLoaderComponent ImageLoaderComponent;
 }
