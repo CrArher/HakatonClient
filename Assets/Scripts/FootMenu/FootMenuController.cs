@@ -64,6 +64,7 @@ namespace FootMenu
         private void OnProfile()
         {
             _context.ScreenChangerModel.SwitchScreen(ScreenType.Profile);
+            _context.NotificationModel.OnNotificationFalse();
         }
     }
 }

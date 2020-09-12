@@ -1,4 +1,5 @@
 ﻿using FootMenu;
+using Notification;
 using PreviewSlider;
 using ScreenManager;
 using ScreenObserver;
@@ -12,4 +13,5 @@ public class GlobalContainer : MonoBehaviour
     public FootMenuComponent FootComponent;
     public ScreensContainer ScreensContainer;
     public AchievementScreenContainer AchievementScreenContainer;
+    public NotificationComponent NotificationComponent;
 }

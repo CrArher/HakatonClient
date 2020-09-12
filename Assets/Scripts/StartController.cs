@@ -1,5 +1,6 @@
 ﻿using System;
 using FootMenu;
+using Notification;
 using PreviewSlider;
 using ScreenManager;
 using ScreenManager.ScreenChanger;
@@ -21,6 +22,7 @@ public class StartController : MonoBehaviour
         _generator.Add(new ScreenChangerGenerator());
         _generator.Add(new FootMenuGenerator());
         _generator.Add(new AchievementsGenerator());
+        _generator.Add(new NotificationGenerator());
         _generator.Generate(_globalContext,_controllerCollection,globalContainer);
         _controllerCollection.Activate();
         _globalContext.ScreenChangerModel.SwitchScreen(ScreenType.Profile);

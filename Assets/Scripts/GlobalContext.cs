@@ -1,4 +1,5 @@
 ﻿using Commands;
+using Notification;
 using ScreenManager.ScreenChanger;
 using Screens.AchievementScreen.Base;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class GlobalContext : IGlobalContext
     public Engine Engine { get; set; }
     public AchievementsModel AchievementsModel { get; set; }
     public References References { get; set; }
+    public NotificationModel NotificationModel { get; set; }
 
     public GlobalContext()
     {
@@ -29,5 +31,6 @@ public class GlobalContext : IGlobalContext
         UserModel = context.UserModel;
         CommandModel = context.CommandModel;
         ScreenChangerModel = context.ScreenChangerModel;
+        NotificationModel = context.NotificationModel;
     }
 }

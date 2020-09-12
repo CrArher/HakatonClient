@@ -1,7 +1,6 @@
 
 Library/
 
-ProjectSettings/
 
 Temp/
 
@@ -12,8 +11,6 @@ Packages/
 Assembly-CSharp.csproj
 
 *.sln
-
-UserSettings/
 
 obj/
 
