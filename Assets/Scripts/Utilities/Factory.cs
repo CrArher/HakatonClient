@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Screens.AchievementScreen;
+using Screens.Courses;
 
 namespace Utilities
 {
@@ -13,6 +14,7 @@ namespace Utilities
             DescriptionFactory = new Dictionary<string, Func<Dictionary<string, object>, IDescription>>
             {
                 {"achievements", (node) => new AchievementDescription(node)},
+                {"directions", (node) => new DirectionDescription(node)}
             };
         }
         

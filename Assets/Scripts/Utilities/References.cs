@@ -1,15 +1,20 @@
 ﻿using System.Collections.Generic;
 using Screens.AchievementScreen;
+using Screens.Courses;
 
 namespace Utilities
 {
     public class References
     {
         public DescriptionCollection<AchievementDescription> Achievements { get; }
+        public DescriptionCollection<DirectionDescription> Directions { get; }
 
         public References(Dictionary<string, object> rawData, Factory factory)
         {
-            Achievements = LoadDictionary<AchievementDescription>((Dictionary<string, object>) rawData["achievements"], factory);
+            Achievements =
+                LoadDictionary<AchievementDescription>((Dictionary<string, object>) rawData["achievements"], factory);
+            Directions =
+                LoadDictionary<DirectionDescription>((Dictionary<string, object>) rawData["directions"], factory);
         }
 
         private DescriptionCollection<T> LoadDictionary<T>(Dictionary<string, object> nodes, Factory factory)
