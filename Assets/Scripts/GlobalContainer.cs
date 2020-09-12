@@ -1,4 +1,5 @@
-﻿using ScreenManager;
+﻿using PreviewSlider;
+using ScreenManager;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -6,5 +7,6 @@ namespace DefaultNamespace
     public class GlobalContainer : MonoBehaviour
     {
         public GameScreens GameScreens;
+        public PreviewSliderContainer PreviewSliderContainer;
     }
 }
