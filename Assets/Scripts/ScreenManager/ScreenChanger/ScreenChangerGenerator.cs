@@ -6,7 +6,7 @@ namespace ScreenManager.ScreenChanger
     {
         public void Generate(GlobalContext context, ControllerCollection controllerCollection, GlobalContainer container)
         {
-            var model = new ScreenChangerModel(ScreenType.SignUp);
+            var model = new ScreenChangerModel(ScreenType.Profile);
             context.ScreenChangerModel = model;
             var controller = new ScreenChangerController(context,model,container.GameScreens);
             controllerCollection.Add(controller);

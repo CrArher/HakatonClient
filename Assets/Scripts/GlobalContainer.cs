@@ -1,6 +1,7 @@
 ﻿using DefaultNamespace.FootMenu;
 using PreviewSlider;
 using ScreenManager;
+using ScreenObserver;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -10,5 +11,6 @@ namespace DefaultNamespace
         public GameScreens GameScreens;
         public PreviewSliderContainer PreviewSliderContainer;
         public FootMenuComponent FootComponent;
+        public ScreensContainer ScreensContainer;
     }
 }

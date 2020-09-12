@@ -1,4 +1,5 @@
 using DefaultNamespace;
+using DefaultNamespace.Screens.Profile;
 using ScreenManager;
 using ScreenManager.ScreenChanger;
 
@@ -35,6 +36,10 @@ namespace ScreenObserver
             _controllerCollection.Clear();
             switch (_model.CurrentScreen)
             {
+                case ScreenType.Profile:
+                    var generator = new ProfileScreenGenerator();
+                    generator.Generate(new ProfileContext(), _container.ProfileContainer,_controllerCollection);
+                    break;
             }
 
             _controllerCollection.Activate();
