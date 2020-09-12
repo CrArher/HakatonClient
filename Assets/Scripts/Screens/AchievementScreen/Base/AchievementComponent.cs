@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Screens.AchievementScreen.Base
 {
@@ -7,7 +8,7 @@ namespace Screens.AchievementScreen.Base
     {
         [SerializeField] private GameObject prefab;
         [SerializeField] private Transform root;
-
+        public Button CloseButton;
         private readonly List<GameObject> _gameObjects = new List<GameObject>();
         
         public AchievementUnitComponent Create()

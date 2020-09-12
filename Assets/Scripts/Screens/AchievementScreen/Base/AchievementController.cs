@@ -1,4 +1,6 @@
-﻿namespace Screens.AchievementScreen.Base
+﻿using ScreenManager;
+
+namespace Screens.AchievementScreen.Base
 {
     public class AchievementController : IController
     {
@@ -16,6 +18,7 @@
         
         public void Deactivate()
         {
+            _component.CloseButton.onClick.RemoveListener(ClickClose);
             _controllerCollection.Deactivate();
             _controllerCollection.Clear();
             _component.Clear();
@@ -29,8 +32,13 @@
                 var controller = new AchievementUnitController(_context, unitModel, component);
                 _controllerCollection.Add(controller);
             }   
-            
+            _component.CloseButton.onClick.AddListener(ClickClose);
             _controllerCollection.Activate();
+        }
+
+        private void ClickClose()
+        {
+            _context.ScreenChangerModel.SwitchScreen(ScreenType.Profile);   
         }
     }
 }
