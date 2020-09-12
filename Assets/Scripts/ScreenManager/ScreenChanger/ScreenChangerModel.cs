@@ -36,6 +36,11 @@ namespace ScreenManager.ScreenChanger
         private IEnumerable<ScreenType> GetScreen()
         {
             yield return ScreenType.SignUp;
+            yield return ScreenType.Directions;
+            yield return ScreenType.Shop;
+            yield return ScreenType.SignIn;
+            yield return ScreenType.Profile;
+            yield return ScreenType.BattlePass;
         }
     }
 }

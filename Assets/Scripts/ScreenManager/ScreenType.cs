@@ -2,6 +2,11 @@
 {
     public enum ScreenType
     {
-        SignUp
+        SignUp,
+        SignIn,
+        Directions,
+        Profile,
+        BattlePass,
+        Shop
     }
 }
