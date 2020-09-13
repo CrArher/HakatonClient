@@ -5,6 +5,7 @@ using PreviewSlider;
 using ScreenManager;
 using ScreenManager.ScreenChanger;
 using Screens.AchievementScreen.Base;
+using Screens.CourseDetails;
 using UnityEngine;
 using Utilities.DataLoad;
 
@@ -18,6 +19,8 @@ public class StartController : MonoBehaviour
     {
         _globalContext.ImageLoaderComponent = globalContainer.ImageLoaderComponent;
         _globalContext.ImageLoaderComponent.Init();
+        
+        _globalContext.CourseDetailsModel = new CourseDetailsModel();
         var controller = new PreviewSliderController(globalContainer.PreviewSliderContainer);
         controller.Activate();
         _generator.Add(new ReferencesGenerator());

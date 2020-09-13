@@ -1,5 +1,7 @@
 ﻿{
-  "achievements" : "Json/achievements",
-  "directions" : "Json/directions",
-  "battlepass" : "Json/battlepass"
+  "achievements": "Json/achievements",
+  "directions": "Json/directions",
+  "battlepass": "Json/battlepass",
+  "ar_course_details": "Json/ar_course_details",
+  "java_course_details": "Json/java_course_details"
 }

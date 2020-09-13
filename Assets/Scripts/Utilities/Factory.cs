@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Screens.AchievementScreen;
 using Screens.BattlePass;
+using Screens.CourseDetails;
 using Screens.Courses;
 
 namespace Utilities
@@ -16,6 +17,8 @@ namespace Utilities
             {
                 {"achievements", (node) => new AchievementDescription(node)},
                 {"directions", (node) => new DirectionDescription(node)},
+                {"ar_course_details", (node) => new CourseDetailsDescription(node)},
+                {"java_course_details", (node) => new CourseDetailsDescription(node)},
                 {"battlepass", (node) => new BattlePassDescription(node)}
                 
             };

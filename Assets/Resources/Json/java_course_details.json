@@ -1,0 +1,36 @@
+﻿{
+  "java_course_details": {
+    "1": {
+      "id": 1,
+      "is_enable": true
+    },
+    "2": {
+      "id": 2,
+      "is_enable": false
+    },
+    "3": {
+      "id": 3,
+      "is_enable": true
+    },
+    "4": {
+      "id": 4,
+      "is_enable": false
+    },
+    "5": {
+      "id": 5,
+      "is_enable": true
+    },
+    "6": {
+      "id": 6,
+      "is_enable": true
+    },
+    "7": {
+      "id": 7,
+      "is_enable": true
+    },
+    "8": {
+      "id": 8,
+      "is_enable": true
+    }
+  }
+}

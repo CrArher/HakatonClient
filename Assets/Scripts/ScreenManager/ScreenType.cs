@@ -8,6 +8,7 @@
         Profile,
         BattlePass,
         Shop,
-        Achievements
+        Achievements,
+        ClassRoom
     }
 }

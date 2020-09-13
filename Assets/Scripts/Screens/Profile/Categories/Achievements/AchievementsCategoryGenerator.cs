@@ -8,7 +8,7 @@ namespace Screens.Profile.Categories.Achievements
         {
             var model = new AchievementsCategoryModel();
             context.AchievementsCategoryModel = model;
-            var controller = new AchievementsCategoryController(context,model,container.achievementsCategoryComponent);
+            var controller = new AchievementsCategoryController(context,model,container);
             collection.Add(controller);
         }
     }

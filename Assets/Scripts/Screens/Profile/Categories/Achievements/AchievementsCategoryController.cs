@@ -6,9 +6,9 @@ namespace Screens.Profile.Categories.Achievements
     {
         private readonly ProfileContext _context;
         private readonly AchievementsCategoryModel _categoryModel;
-        private readonly AchievementsCategoryComponent _categoryComponent;
+        private readonly ProfileContainer _categoryComponent;
 
-        public AchievementsCategoryController(ProfileContext context, AchievementsCategoryModel categoryModel, AchievementsCategoryComponent categoryComponent)
+        public AchievementsCategoryController(ProfileContext context, AchievementsCategoryModel categoryModel, ProfileContainer categoryComponent)
         {
             _context = context;
             _categoryModel = categoryModel;
@@ -17,17 +17,26 @@ namespace Screens.Profile.Categories.Achievements
 
         public void Deactivate()
         {
-            // _categoryComponent.ToAchievements.onClick.RemoveListener(OnClick);
+            _categoryComponent.ArClick.onClick.RemoveListener(ClickAr);
+            _categoryComponent.JavaClick.onClick.RemoveListener(ClickJava);
         }
 
         public void Activate()
         {
-            // _categoryComponent.ToAchievements.onClick.AddListener(OnClick);
+            _categoryComponent.ArClick.onClick.AddListener(ClickAr);
+            _categoryComponent.JavaClick.onClick.AddListener(ClickJava);
         }
 
-        private void OnClick()
+        private void ClickJava()
         {
-            _context.ScreenChangerModel.SwitchScreen(ScreenType.Achievements);
+            _context.CourseDetailsModel.Show(_context.References.JavaCourseDetails);
+            _context.ScreenChangerModel.SwitchScreen(ScreenType.ClassRoom);
+        }
+
+        private void ClickAr()
+        {
+            _context.CourseDetailsModel.Show(_context.References.ArCourseDetails);
+            _context.ScreenChangerModel.SwitchScreen(ScreenType.ClassRoom);
         }
     }
 }

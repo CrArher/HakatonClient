@@ -2,6 +2,7 @@ using Commands;
 using Notification;
 using ScreenManager.ScreenChanger;
 using Screens.AchievementScreen.Base;
+using Screens.CourseDetails;
 using UnityEngine;
 using User;
 using Utilities;
@@ -18,4 +19,5 @@ public interface IGlobalContext
     ImageLoaderComponent ImageLoaderComponent { get; set; }
 
     NotificationModel NotificationModel { get; set; }
+    CourseDetailsModel CourseDetailsModel { get; set; } 
 }

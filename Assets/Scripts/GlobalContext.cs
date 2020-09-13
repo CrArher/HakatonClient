@@ -2,6 +2,7 @@
 using Notification;
 using ScreenManager.ScreenChanger;
 using Screens.AchievementScreen.Base;
+using Screens.CourseDetails;
 using UnityEngine;
 using User;
 using Utilities;
@@ -17,6 +18,7 @@ public class GlobalContext : IGlobalContext
     public References References { get; set; }
     public NotificationModel NotificationModel { get; set; }
     public ImageLoaderComponent ImageLoaderComponent { get; set; }
+    public CourseDetailsModel CourseDetailsModel { get; set; }
 
     public GlobalContext()
     {
@@ -34,5 +36,6 @@ public class GlobalContext : IGlobalContext
         ScreenChangerModel = context.ScreenChangerModel;
         NotificationModel = context.NotificationModel;
         ImageLoaderComponent = context.ImageLoaderComponent;
+        CourseDetailsModel = context.CourseDetailsModel;
     }
 }

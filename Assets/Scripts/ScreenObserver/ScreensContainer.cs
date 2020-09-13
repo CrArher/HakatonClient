@@ -1,5 +1,6 @@
 using Screens.AchievementScreen;
 using Screens.BattlePass;
+using Screens.CourseDetails;
 using Screens.Courses;
 using Screens.Profile;
 using UnityEngine;
@@ -12,5 +13,6 @@ namespace ScreenObserver
         public AchievementScreenContainer AchievementScreenContainer;
         public DirectionsContainer directionsContainer;
         public BattlePassContainer BattlePassContainer;
+        public CourseDetailsScreenContainer CourseDetailsScreenContainer;
     }
 }

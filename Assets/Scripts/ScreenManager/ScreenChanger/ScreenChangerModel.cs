@@ -37,6 +37,7 @@ namespace ScreenManager.ScreenChanger
         {
             // yield return ScreenType.SignUp;
             yield return ScreenType.Directions;
+            yield return ScreenType.ClassRoom;
             yield return ScreenType.Shop;
             // yield return ScreenType.SignIn;
             yield return ScreenType.Profile;

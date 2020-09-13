@@ -8,7 +8,6 @@ namespace Screens.Courses.Categories
     public class CategoriesComponent : MonoBehaviour
     {
         public TMP_Dropdown Dropdown;
-
         
         public IEnumerable<DirectionCategories> GetCategories()
         {

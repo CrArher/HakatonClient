@@ -2,6 +2,7 @@ using ScreenManager;
 using ScreenManager.ScreenChanger;
 using Screens.AchievementScreen;
 using Screens.BattlePass;
+using Screens.CourseDetails;
 using Screens.Courses;
 using Screens.Profile;
 
@@ -53,6 +54,10 @@ namespace ScreenObserver
                 case ScreenType.BattlePass:
                     new BattlePassScreenGenerator().Generate(new BattlePassContext(_context),
                         _container.BattlePassContainer, _controllerCollection);
+                    break;
+                case ScreenType.ClassRoom:
+                    new CourseDetailsScreenGenerator().Generate(new CourseDetailsContext(_context),
+                        _container.CourseDetailsScreenContainer, _controllerCollection);
                     break;
             }
 

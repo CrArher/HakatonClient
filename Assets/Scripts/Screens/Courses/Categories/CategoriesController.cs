@@ -19,14 +19,6 @@ namespace Screens.Courses.Categories
 
         public void Activate()
         {
-            foreach (var directionCategory in _component.GetCategories())
-            {
-                _component.Dropdown.options.Add(new TMP_Dropdown.OptionData(
-                    directionCategory == DirectionCategories.GameDeveloper
-                        ? "Разработчик игр"
-                        : "Системный администратор"));
-            }
-            
             _component.Dropdown.onValueChanged.AddListener(ChangeCategory);
         }
 
