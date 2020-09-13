@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Screens.AchievementScreen;
+using Screens.BattlePass;
 using Screens.Courses;
 
 namespace Utilities
@@ -8,11 +9,13 @@ namespace Utilities
     {
         public DescriptionCollection<AchievementDescription> Achievements { get; }
         public DescriptionCollection<DirectionDescription> Directions { get; }
+        public DescriptionCollection<BattlePassDescription> BattlePass { get; }
 
         public References(Dictionary<string, object> rawData, Factory factory)
         {
             Achievements = LoadDictionary<AchievementDescription>((Dictionary<string, object>) rawData["achievements"], factory);
             Directions = LoadDictionary<DirectionDescription>((Dictionary<string, object>) rawData["directions"], factory);
+            BattlePass = LoadDictionary<BattlePassDescription>((Dictionary<string, object>) rawData["battlepass"], factory);
         }
 
         private DescriptionCollection<T> LoadDictionary<T>(Dictionary<string, object> nodes, Factory factory)

@@ -1,6 +1,7 @@
 using ScreenManager;
 using ScreenManager.ScreenChanger;
 using Screens.AchievementScreen;
+using Screens.BattlePass;
 using Screens.Courses;
 using Screens.Profile;
 
@@ -38,13 +39,20 @@ namespace ScreenObserver
             switch (_model.CurrentScreen)
             {
                 case ScreenType.Profile:
-                    new ProfileScreenGenerator().Generate(new ProfileContext(_context), _container.ProfileContainer, _controllerCollection);
+                    new ProfileScreenGenerator().Generate(new ProfileContext(_context), _container.ProfileContainer,
+                        _controllerCollection);
                     break;
                 case ScreenType.Achievements:
-                    new AchievementScreenGenerator().Generate(new AchievementScreenContext(_context), _container.AchievementScreenContainer, _controllerCollection);
+                    new AchievementScreenGenerator().Generate(new AchievementScreenContext(_context),
+                        _container.AchievementScreenContainer, _controllerCollection);
                     break;
                 case ScreenType.Directions:
-                    new DirectionsScreenGenerator().Generate(new DirectionsContext(_context),_container.directionsContainer,_controllerCollection );
+                    new DirectionsScreenGenerator().Generate(new DirectionsContext(_context),
+                        _container.directionsContainer, _controllerCollection);
+                    break;
+                case ScreenType.BattlePass:
+                    new BattlePassScreenGenerator().Generate(new BattlePassContext(_context),
+                        _container.BattlePassContainer, _controllerCollection);
                     break;
             }
 

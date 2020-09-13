@@ -1,4 +1,5 @@
 ﻿{
   "achievements" : "Json/achievements",
-  "directions" : "Json/directions"
+  "directions" : "Json/directions",
+  "battlepass" : "Json/battlepass"
 }
