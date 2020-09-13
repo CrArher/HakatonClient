@@ -5,6 +5,6 @@ namespace Notification
 {
     public class NotificationComponent : MonoBehaviour
     {
-        public RawImage Notification;
+        public Image Notification;
     }
 }
