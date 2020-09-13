@@ -28,6 +28,14 @@ namespace Screens.Courses.Search
         {
             yield return "Java";
             yield return "Android";
+            yield return "ООП";
+            yield return "VR";
+            yield return "AR";
+            yield return "Unity";
+            yield return "Безопасность";
+            yield return "BigData";
+            yield return "Python";
+            yield return "Админ";
         }
     }
 }
