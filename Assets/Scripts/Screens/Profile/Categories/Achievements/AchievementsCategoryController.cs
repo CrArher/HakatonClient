@@ -17,12 +17,12 @@ namespace Screens.Profile.Categories.Achievements
 
         public void Deactivate()
         {
-            _categoryComponent.ToAchievements.onClick.RemoveListener(OnClick);
+            // _categoryComponent.ToAchievements.onClick.RemoveListener(OnClick);
         }
 
         public void Activate()
         {
-            _categoryComponent.ToAchievements.onClick.AddListener(OnClick);
+            // _categoryComponent.ToAchievements.onClick.AddListener(OnClick);
         }
 
         private void OnClick()

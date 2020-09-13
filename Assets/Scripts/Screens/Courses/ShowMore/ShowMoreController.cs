@@ -42,12 +42,6 @@
         {
             _component.Name.text = _model.GetCurrentModel().DirectionDescription.Name;
             _component.Description.text = _model.GetCurrentModel().DirectionDescription.Description;
-            _component.Teacher.text = _model.GetCurrentModel().DirectionDescription.Teacher;
-            foreach (var tag in _model.GetCurrentModel().DirectionDescription.Tags)
-            {
-                _component.Tags.text += tag + ",";
-            }
-            _component.Tags.text.Substring(_component.Tags.text.Length);
         }
     }
 }

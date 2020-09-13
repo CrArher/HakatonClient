@@ -13,6 +13,7 @@ namespace FootMenu
         public ButtonFooter Shop;
         public ButtonFooter BattlePass;
         public ButtonFooter Directions;
+        public ButtonFooter Achievements;
 
         public void Show(ButtonFooter buttonFooter)
         {

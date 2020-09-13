@@ -22,14 +22,8 @@
         public void Activate()
         {
             _component.Name.text = _model.DirectionDescription.Name;
-            _component.Teacher.text = _model.DirectionDescription.Teacher;
-            _component.ShortDescription.text = _model.DirectionDescription.Description.Substring(20) + "...";
-            foreach (var tag in _model.DirectionDescription.Tags)
-            {
-                _component.Tags.text += tag + ",";
-            }
-
-            _component.Tags.text.Substring(_component.Tags.text.Length);
+            _component.ShortDescription.text = _model.DirectionDescription.Description;
+            _component.ShortDescription.text = _component.ShortDescription.text.Remove(180) + "..";
             _component.ShowMore.onClick.AddListener(OnShowMore);
 
             _model.OnHide += OnHide;

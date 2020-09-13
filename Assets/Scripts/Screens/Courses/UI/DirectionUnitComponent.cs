@@ -8,8 +8,6 @@ namespace Screens.Courses
     {
         public TMP_Text Name;
         public TMP_Text ShortDescription;
-        public TMP_Text Teacher;
-        public TMP_Text Tags;
         public Button ShowMore;
     }
 }

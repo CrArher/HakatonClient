@@ -1,4 +1,6 @@
-﻿namespace Screens.Courses.Search
+﻿using UnityEngine;
+
+namespace Screens.Courses.Search
 {
     public class SearchUnitController : IController
     {
@@ -27,7 +29,7 @@
         private void OnClick()
         {
             _model.Click();
-            _component.Icon.gameObject.SetActive(_model.IsEnable);
+            _component.Icon.color = !_model.IsEnable ? Color.white : Color.green;
         }
     }
 }

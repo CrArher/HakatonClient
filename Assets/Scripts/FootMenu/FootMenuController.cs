@@ -19,6 +19,7 @@ namespace FootMenu
             _component.Shop.Button.onClick.RemoveListener(OnShop);
             _component.BattlePass.Button.onClick.RemoveListener(OnBattlePass);
             _component.Directions.Button.onClick.RemoveListener(OnDirections);
+            _component.Achievements.Button.onClick.RemoveListener(OnAchievements);
             _context.ScreenChangerModel.ChangedScreen -= IsActive;
         }
 
@@ -30,15 +31,22 @@ namespace FootMenu
             _component.Shop.Button.onClick.AddListener(OnShop);
             _component.BattlePass.Button.onClick.AddListener(OnBattlePass);
             _component.Directions.Button.onClick.AddListener(OnDirections);
+            _component.Achievements.Button.onClick.AddListener(OnAchievements);
             _context.ScreenChangerModel.ChangedScreen += IsActive;
         }
+
+        private void OnAchievements()
+        {
+            _component.Show(_component.Achievements);
+            _context.ScreenChangerModel.SwitchScreen(ScreenType.Achievements);        }
 
         private void IsActive()
         {
             if (_context.ScreenChangerModel.CurrentScreen == ScreenType.Directions || 
                 _context.ScreenChangerModel.CurrentScreen == ScreenType.Profile ||
                 _context.ScreenChangerModel.CurrentScreen == ScreenType.Shop ||
-                _context.ScreenChangerModel.CurrentScreen == ScreenType.BattlePass)
+                _context.ScreenChangerModel.CurrentScreen == ScreenType.BattlePass ||
+                _context.ScreenChangerModel.CurrentScreen == ScreenType.Achievements)
             {
                 _component.root.SetActive(true);
             }
