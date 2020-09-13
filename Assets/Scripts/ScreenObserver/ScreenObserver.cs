@@ -1,6 +1,7 @@
 using ScreenManager;
 using ScreenManager.ScreenChanger;
 using Screens.AchievementScreen;
+using Screens.Courses;
 using Screens.Profile;
 
 namespace ScreenObserver
@@ -41,6 +42,9 @@ namespace ScreenObserver
                     break;
                 case ScreenType.Achievements:
                     new AchievementScreenGenerator().Generate(new AchievementScreenContext(_context), _container.AchievementScreenContainer, _controllerCollection);
+                    break;
+                case ScreenType.Directions:
+                    new DirectionsScreenGenerator().Generate(new DirectionsContext(_context),_container.directionsContainer,_controllerCollection );
                     break;
             }
 

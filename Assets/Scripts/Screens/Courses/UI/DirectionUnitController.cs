@@ -2,11 +2,11 @@
 {
     public class DirectionUnitController : IController
     {
-        private readonly CoursesContext _context;
+        private readonly DirectionsContext _context;
         private readonly DirectionUnitComponent _component;
         private readonly DirectionUnitModel _model;
 
-        public DirectionUnitController(CoursesContext context,DirectionUnitModel model,DirectionUnitComponent component)
+        public DirectionUnitController(DirectionsContext context,DirectionUnitModel model,DirectionUnitComponent component)
         {
             _context = context;
             _component = component;

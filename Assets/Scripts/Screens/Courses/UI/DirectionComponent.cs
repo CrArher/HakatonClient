@@ -17,6 +17,8 @@ namespace Screens.Courses
             return go.GetComponent<DirectionUnitComponent>();
         }
 
+        
+
         public void Clear()
         {
             foreach (var go in _gameObjects)

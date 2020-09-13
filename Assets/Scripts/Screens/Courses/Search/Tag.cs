@@ -7,7 +7,7 @@ namespace Screens.Courses
     public class Tag : MonoBehaviour
     {
         public TMP_Text tag;
-        public Button AddTag;
-        public Button RemoveTag;
+        public Button AddOrRemoveTag;
+        public Image Mark;
     }
 }

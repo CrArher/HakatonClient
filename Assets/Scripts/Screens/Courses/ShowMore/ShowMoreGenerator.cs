@@ -2,9 +2,9 @@
 
 namespace Screens.Courses.ShowMore
 {
-    public class ShowMoreGenerator : IScreenGenerator<CoursesContext,CoursesContainer>
+    public class ShowMoreGenerator : IScreenGenerator<DirectionsContext,DirectionsContainer>
     {
-        public void Generate(CoursesContext context, CoursesContainer container, ControllerCollection collection)
+        public void Generate(DirectionsContext context, DirectionsContainer container, ControllerCollection collection)
         {
             var model = new ShowMoreModel();
             context.ShowMoreModel = model;

@@ -2,11 +2,11 @@
 {
     public class ShowMoreController : IController
     {
-        private readonly CoursesContext _context;
+        private readonly DirectionsContext _context;
         private readonly ShowMoreModel _model;
         private readonly ShowMoreComponent _component;
 
-        public ShowMoreController(CoursesContext context,ShowMoreModel model,ShowMoreComponent component)
+        public ShowMoreController(DirectionsContext context,ShowMoreModel model,ShowMoreComponent component)
         {
             _context = context;
             _model = model;
