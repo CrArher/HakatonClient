@@ -5,28 +5,32 @@
         private readonly DirectionsContext _context;
         private readonly SearchModel _model;
         private readonly SearchComponent _component;
-        private ControllerCollection _controllerCollection = new ControllerCollection();
+        private readonly ControllerCollection _controllerCollection = new ControllerCollection();
 
-        public SearchController(DirectionsContext context,SearchModel model,SearchComponent component)
+        public SearchController(DirectionsContext context, SearchModel model, SearchComponent component)
         {
             _context = context;
             _model = model;
             _component = component;
         }
+
         public void Deactivate()
         {
             _controllerCollection.Deactivate();
             _controllerCollection.Clear();
+            _component.Clear();
         }
 
         public void Activate()
         {
-            foreach (var tag in _component.Tags)
+            foreach (var tag in _model.GetAll())
             {
-                var controller = new TagController(_context,_model,tag);
-                controller.Activate();
+                var component = _component.Create();
+                var controller = new SearchUnitController(_context, tag, component);
                 _controllerCollection.Add(controller);
             }
+
+            _controllerCollection.Activate();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ScreenObserver;
+using Screens.Courses.Search;
 using Screens.Courses.ShowMore;
 
 namespace Screens.Courses
@@ -13,9 +14,14 @@ namespace Screens.Courses
         {
             _generators.Add(new DirectionGenerator());
             _generators.Add(new ShowMoreGenerator());
+            _generators.Add(new SearchGenerator());
         }
         public void Generate(DirectionsContext context, DirectionsContainer container, ControllerCollection collection)
         {
+            foreach (var generator in _generators)
+            {
+                generator.Generate(context, container, collection);
+            }
         }
     }
 }

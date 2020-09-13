@@ -10,9 +10,9 @@ namespace Screens.Courses
         public List<DirectionUnitModel> UnitModels = new List<DirectionUnitModel>();
 
 
-        public DirectionModel(DescriptionCollection<DirectionDescription> Descriptions)
+        public DirectionModel(DescriptionCollection<DirectionDescription> descriptions)
         {
-            foreach (var description in Descriptions)
+            foreach (var description in descriptions)
             {
                 UnitModels.Add(new DirectionUnitModel(description.Value));
             }    

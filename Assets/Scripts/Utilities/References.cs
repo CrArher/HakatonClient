@@ -11,8 +11,8 @@ namespace Utilities
 
         public References(Dictionary<string, object> rawData, Factory factory)
         {
-            Achievements =
-                LoadDictionary<AchievementDescription>((Dictionary<string, object>) rawData["achievements"], factory);
+            Achievements = LoadDictionary<AchievementDescription>((Dictionary<string, object>) rawData["achievements"], factory);
+            Directions = LoadDictionary<DirectionDescription>((Dictionary<string, object>) rawData["directions"], factory);
         }
 
         private DescriptionCollection<T> LoadDictionary<T>(Dictionary<string, object> nodes, Factory factory)

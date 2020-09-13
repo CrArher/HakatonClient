@@ -1,3 +1,4 @@
 ﻿{
-  "achievements" : "Json/achievements"
+  "achievements" : "Json/achievements",
+  "directions" : "Json/directions"
 }

@@ -15,6 +15,8 @@
         public void Deactivate()
         {
             _context.ShowMoreModel.OnHide();
+            _model.OnHide -= OnHide;
+            _model.OnShow -= OnShow;
         }
 
         public void Activate()
@@ -29,6 +31,19 @@
 
             _component.Tags.text.Substring(_component.Tags.text.Length);
             _component.ShowMore.onClick.AddListener(OnShowMore);
+
+            _model.OnHide += OnHide;
+            _model.OnShow += OnShow;
+        }
+
+        private void OnShow()
+        {
+            _component.gameObject.SetActive(true);
+        }
+
+        private void OnHide()
+        {
+            _component.gameObject.SetActive(false);
         }
 
         private void OnShowMore()

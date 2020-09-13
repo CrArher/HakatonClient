@@ -18,7 +18,6 @@ namespace Screens.Courses
 
         public void Deactivate()
         {
-            _model.ShowByTags -= ShowOnlyByTag;
             _controllerCollection.Deactivate();
             _component.Clear();
             _controllerCollection.Clear();
@@ -30,8 +29,6 @@ namespace Screens.Courses
             {
                 ShowDirection(unitModel);
             }
-
-            _model.ShowByTags += ShowOnlyByTag;
         }
 
         public void ShowDirection(DirectionUnitModel unitModel)
@@ -40,32 +37,6 @@ namespace Screens.Courses
             var controller = new DirectionUnitController(_context, unitModel, component);
             controller.Activate();
             _controllerCollection.Add(controller);
-        }
-
-        public void ShowOnlyByTag(List<string> tags)
-        {
-            
-            _component.Clear();
-            _controllerCollection.Deactivate();
-            _controllerCollection.Clear();
-            foreach (var unitModel in _model.UnitModels)
-            {
-                foreach (var tag in tags)
-                {
-                    if (!unitModel.DirectionDescription.Tags.Contains(tag))
-                    {
-                        unitModel.IsActive = false;
-                    }
-                }
-            }
-
-            foreach (var unitModel in _model.UnitModels)
-            {
-                if (unitModel.IsActive)
-                {
-                    ShowDirection(unitModel);
-                }
-            }
         }
     }
 }
