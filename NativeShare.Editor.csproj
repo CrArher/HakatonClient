@@ -12,10 +12,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DF5599E3-DC7F-47B1-B965-F3568290D8A3}</ProjectGuid>
+    <ProjectGuid>{8F752349-E115-8008-6F85-2DF2EE306E45}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>NativeShare.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -29,7 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -39,7 +39,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
@@ -58,205 +58,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Examples\Scripts\AddElement.cs" />
-     <Compile Include="Assets\Examples\Scripts\RemoveElement.cs" />
-     <Compile Include="Assets\Scripts\BaseMessaging.cs" />
-     <Compile Include="Assets\Scripts\Commands\Base\ExecuteCommand.cs" />
-     <Compile Include="Assets\Scripts\Commands\Base\ICommand.cs" />
-     <Compile Include="Assets\Scripts\Commands\Base\IExecuteCommand.cs" />
-     <Compile Include="Assets\Scripts\Commands\CommandController.cs" />
-     <Compile Include="Assets\Scripts\Commands\CommandGenerator.cs" />
-     <Compile Include="Assets\Scripts\Commands\CommandModel.cs" />
-     <Compile Include="Assets\Scripts\CommunicationUtils.cs" />
-     <Compile Include="Assets\Scripts\ControllerCollection.cs" />
-     <Compile Include="Assets\Scripts\FootMenu\FootMenuComponent.cs" />
-     <Compile Include="Assets\Scripts\FootMenu\FootMenuController.cs" />
-     <Compile Include="Assets\Scripts\FootMenu\FootMenuGenerator.cs" />
-     <Compile Include="Assets\Scripts\Generator.cs" />
-     <Compile Include="Assets\Scripts\GlobalContainer.cs" />
-     <Compile Include="Assets\Scripts\GlobalContext.cs" />
-     <Compile Include="Assets\Scripts\IController.cs" />
-     <Compile Include="Assets\Scripts\IGenerator.cs" />
-     <Compile Include="Assets\Scripts\IGlobalContext.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\AssemblyInfo.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\Formatter.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\Getters.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\Helper.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\JSON.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\JsonParser.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\JsonSerializer.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\Reflection.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\SafeDictionary.cs" />
-     <Compile Include="Assets\Scripts\Lib\fastJSON\dynamic.cs" />
-     <Compile Include="Assets\Scripts\Notification\NotificationComponent.cs" />
-     <Compile Include="Assets\Scripts\Notification\NotificationController.cs" />
-     <Compile Include="Assets\Scripts\Notification\NotificationGenerator.cs" />
-     <Compile Include="Assets\Scripts\Notification\NotificationModel.cs" />
-     <Compile Include="Assets\Scripts\PreviewSlider\PreviewSliderContainer.cs" />
-     <Compile Include="Assets\Scripts\PreviewSlider\PreviewSliderController.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\GameScreens.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\ScreenChanger\ScreenChangerController.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\ScreenChanger\ScreenChangerGenerator.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\ScreenChanger\ScreenChangerModel.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\ScreenChanger\ScreenChangerUnitController.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\ScreenChanger\ScreenChangerUnitModel.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\ScreenComponent.cs" />
-     <Compile Include="Assets\Scripts\ScreenManager\ScreenType.cs" />
-     <Compile Include="Assets\Scripts\ScreenObserver\ISceneContainer.cs" />
-     <Compile Include="Assets\Scripts\ScreenObserver\IScreenGenerator.cs" />
-     <Compile Include="Assets\Scripts\ScreenObserver\ScreenObserver.cs" />
-     <Compile Include="Assets\Scripts\ScreenObserver\ScreensContainer.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementDescription.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementDetailsDialog\AchievementDetailsDialogComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementDetailsDialog\AchievementDetailsDialogController.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementDetailsDialog\AchievementDetailsDialogGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementDetailsDialog\AchievementDetailsDialogModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementScreenContainer.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementScreenContext.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementScreenGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\AchievementType.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementController.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementUnitComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementUnitController.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementUnitModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementsGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementsModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\AchievementScreen\Base\AchievementsScreenGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\BattlePassContainer.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\BattlePassContext.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\BattlePassDescription.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\BattlePassScreenGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\UI\BattlePassComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\UI\BattlePassController.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\UI\BattlePassGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\UI\BattlePassModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\UI\BattlePassUnitComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\UI\BattlePassUnitController.cs" />
-     <Compile Include="Assets\Scripts\Screens\BattlePass\UI\BattlePassUnitModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Categories\CategoriesComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Categories\CategoriesController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Categories\CategoriesGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Categories\DirectionCategories.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\DirectionsContainer.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\DirectionsContext.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\DirectionsScreenGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\SearchComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\SearchController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\SearchGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\SearchModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\SearchUnitComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\SearchUnitController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\SearchUnitModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\Tag.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\TagObserver.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\Search\TagUnitObserver.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\ShowMore\ShowMoreComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\ShowMore\ShowMoreController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\ShowMore\ShowMoreGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\ShowMore\ShowMoreModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionDescription.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionUnitComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionUnitController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Courses\UI\DirectionUnitModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Achievements\AchievementsCategoryComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Achievements\AchievementsCategoryController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Achievements\AchievementsCategoryGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Achievements\AchievementsCategoryModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Activity\ActivityComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Activity\ActivityController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Activity\ActivityGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Activity\ActivityModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Activity\Graph\GraphHelper.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Header\HeaderComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Header\HeaderController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Header\HeaderGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Header\HeaderModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Info\InfoComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Info\InfoController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Info\InfoGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\Categories\Info\InfoModel.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\ProfileContainer.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\ProfileContext.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\ProfileScreenGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\UI\ProfileComponent.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\UI\ProfileController.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\UI\ProfileGenerator.cs" />
-     <Compile Include="Assets\Scripts\Screens\Profile\UI\ProfileModel.cs" />
-     <Compile Include="Assets\Scripts\ServerCommunication.cs" />
-     <Compile Include="Assets\Scripts\StartController.cs" />
-     <Compile Include="Assets\Scripts\User\UserController.cs" />
-     <Compile Include="Assets\Scripts\User\UserGenerator.cs" />
-     <Compile Include="Assets\Scripts\User\UserModel.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Constants.cs" />
-     <Compile Include="Assets\Scripts\Utilities\DataLoad\ILoader.cs" />
-     <Compile Include="Assets\Scripts\Utilities\DataLoad\JsonLoader.cs" />
-     <Compile Include="Assets\Scripts\Utilities\DataLoad\MainConfigLoader.cs" />
-     <Compile Include="Assets\Scripts\Utilities\DataLoad\ReferencesGenerator.cs" />
-     <Compile Include="Assets\Scripts\Utilities\DescriptionCollection.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Engine.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Factory.cs" />
-     <Compile Include="Assets\Scripts\Utilities\IDescription.cs" />
-     <Compile Include="Assets\Scripts\Utilities\ISystem.cs" />
-     <Compile Include="Assets\Scripts\Utilities\ImageLoaderComponent.cs" />
-     <Compile Include="Assets\Scripts\Utilities\NodeExtension.cs" />
-     <Compile Include="Assets\Scripts\Utilities\References.cs" />
-     <Compile Include="Assets\Scripts\Utilities\SuffixFormer.cs" />
-     <Compile Include="Assets\Scripts\Utilities\Writer.cs" />
-     <Compile Include="Assets\Scripts\WsClient.cs" />
-     <Compile Include="Assets\ScrollSnap.cs" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\UI - BUILDER\Source Files\Fonts\OpenSans-Familiy\OpenSansLic.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     <Compile Include="Assets\Plugins\NativeShare\Editor\NSPostProcessBuild.cs" />
+     <None Include="Assets\Plugins\NativeShare\Editor\NativeShare.Editor.asmdef" />
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -281,6 +95,12 @@
  </Reference>
  <Reference Include="UnityEngine.ClothModule">
  <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -428,6 +248,24 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Users/vladislav/Desktop/repos/HakatonClient/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -783,16 +621,6 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/UnityInstals/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="NativeShare.Editor.csproj">
-      <Project>{8F752349-E115-8008-6F85-2DF2EE306E45}</Project>
-      <Name>NativeShare.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NativeShare.Runtime.csproj">
-      <Project>{47675FEE-1E23-1D42-B76C-FEF560994885}</Project>
-      <Name>NativeShare.Runtime</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

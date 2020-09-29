@@ -15,8 +15,10 @@ public class StartController : MonoBehaviour
     ControllerCollection _controllerCollection = new ControllerCollection();
     private GlobalContext _globalContext = new GlobalContext();
     private Generator _generator = new Generator();
+    public NativeShare NativeShare = new NativeShare();
     public void Start()
     {
+        NativeShare.Share();
         _globalContext.ImageLoaderComponent = globalContainer.ImageLoaderComponent;
         _globalContext.ImageLoaderComponent.Init();
         
